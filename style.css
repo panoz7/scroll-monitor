@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#scroll-position {
+    font-size: 40px;
+    background-color: orange;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: arial;
+}
+
+.content {
+    /* background-image: url('images/grid.png'); */
+    /* background-size: contain; */
+    background: linear-gradient(to left,#e66465, #9198e5);
+    /* background-color: #9198e5; */
+
+    width: 390.625vh;
+    height: 100%;
+}
+
+.content img {
+    height: 100%;
+}
+
+.circle {
+    width: 13.02vh;
+    height: 13.02vh;
+    border: 5px solid white;
+    border-radius: 100px;
+    position: absolute;
+    opacity: 0;
+}
+
+.circle.active {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+#circle1 {
+    left: 1000px;
+    top: 200px;
+}
